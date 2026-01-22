@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main-orange: #ff6b35;
+  --color-hanuman: #ff6b35;
+}
 
+p {
+  color: rgb(100, 100, 100);
 }
