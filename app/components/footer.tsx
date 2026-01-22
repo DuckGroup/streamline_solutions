@@ -1,25 +1,49 @@
-import { Button } from "./button";
-
 export const Footer = () => {
   return (
-    <footer className="bg-zinc-800 text-white text-center w-full">
-      <div className="py-12">
+    <footer className="bg-stone-900 text-zinc-300">
+      <div className="max-w-7xl mx-auto px-6 py-20 grid gap-12 md:grid-cols-4">
+        
+        <div>
+          <h3 className="text-white text-2xl font-semibold mb-4 ">
+            Streamline.
+          </h3>
+          <p className="text-m leading-relaxed">
+            A small studio making big things happen. Based in Stockholm,
+            working with clients worldwide.
+          </p>
+        </div>
 
-      <h2 className="text-4xl font-bold w-full pb-4">
-        Ready to build something great?
-      </h2>
+        <div>
+          <h4 className="text-white font-semibold mb-4 text-2xl">Services</h4>
+          <ul className="space-y-2 text-m">
+            <li>Web Development</li>
+            <li>Mobile Apps</li>
+            <li>Custom Software</li>
+            <li>Product Strategy</li>
+          </ul>
+        </div>
 
-      <p className="max-w-xl mx-auto pb-8">
-        Let&apos;s have a quick chat about your project. No pressure, no sales
-        pitch — just a conversation about how we can help.
-      </p>
+        <div>
+          <h4 className="text-white font-semibold mb-4 text-2xl">Company</h4>
+          <ul className="space-y-2 text-m">
+            <li>Our Work</li>
+            {/* <li>Testimonials</li> */}
+            <li>Contact</li>
+            <li>Careers</li>
+          </ul>
+        </div>
 
-      <Button>Schedule a call</Button>
+        <div>
+          <h4 className="text-white font-semibold mb-4 text-2xl">Get in Touch</h4>
+          <ul className="space-y-2 text-m">
+            <li>StreamlineSolutionsAB@hotmail.com</li>
+            <li>Stockholm, Sweden</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="text-sm bg-stone-950 py-24">
-        <p>© 2026 Streamline Solutions. Built with care in Stockholm.</p>
-        <p>We&apos;re a small team making big things happen.</p>
+      <div className="border-t border-zinc-800 py-6 text-center text-xs text-zinc-500">
+        © 2026 Streamline Solutions. All rights reserved.
       </div>
     </footer>
   );
