@@ -11,6 +11,7 @@ import {
   Router,
   TabletSmartphone,
 } from "lucide-react";
+import { Approach } from "./components/approach";
 
 export default function Home() {
   return (
@@ -102,6 +103,7 @@ export default function Home() {
             focus on growth.
           </ServiceCard>
         </div>
+        <Approach></Approach>
       </section>
       <Footer />
     </main>
