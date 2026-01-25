@@ -1,3 +1,5 @@
+import { SectionIntro } from "./sectionintro";
+
 const approaches = [
   {
     number: "01",
@@ -27,37 +29,31 @@ const approaches = [
 
 export const Approach = () => {
   return (
-    <section id="approach" className="py-32 bg-white">
-      <div className="max-w-350 mx-auto px-6 lg:px-12">
+    <section id="approach" className="px-4 md:px-24 py-32 bg-white flex flex-col items-center">
+      <div className="max-w-350">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div className="lg:sticky lg:top-32">
-            <div className="inline-block mb-4 px-4 py-2 bg-white border border-hanuman rounded-full">
-              <span className="text-hanuman text-sm">How We Work</span>
-            </div>
-            <h2 className="text-4xl md:text-6xl text-black mb-6">
-              A process that respects your time
-            </h2>
-            <p className="text-xl leading-relaxed">
-              We&apos;ve removed the friction from software development. No jargon,
-              no bloated timelines, no surprises.
-            </p>
+            <SectionIntro
+              title="A process that respects your time"
+              subtitle="How We Work"
+            >
+              We&apos;ve removed the friction from software development. No
+              jargon, no bloated timelines, no surprises.
+            </SectionIntro>
           </div>
 
-          
           <div className="space-y-12">
             {approaches.map((approach, index) => (
               <div key={index} className="group">
                 <div className="flex gap-6">
-                  <div className="text-6xl text-hanuman group-hover:text-hanuman/50 transition-colors duration-500">
+                  <div className="text-6xl text-hanuman">
                     {approach.number}
                   </div>
                   <div>
                     <h3 className="text-2xl text-black mb-3">
                       {approach.title}
                     </h3>
-                    <p className="leading-relaxed">
-                      {approach.description}
-                    </p>
+                    <p className="leading-relaxed">{approach.description}</p>
                   </div>
                 </div>
                 {index < approaches.length - 1 && (
