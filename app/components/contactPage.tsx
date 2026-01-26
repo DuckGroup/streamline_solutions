@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { SectionIntro } from "./sectionintro";
-import { Mail, MessageSquare, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
