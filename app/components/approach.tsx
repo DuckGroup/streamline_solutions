@@ -1,6 +1,8 @@
+"use client";
+import { ApproachItem } from "./approachItem";
 import { SectionIntro } from "./sectionintro";
 
-const approaches = [
+export const approaches = [
   {
     number: "01",
     title: "Discovery",
@@ -44,22 +46,7 @@ export const Approach = () => {
 
           <div className="space-y-12">
             {approaches.map((approach, index) => (
-              <div key={index} className="group">
-                <div className="flex gap-6">
-                  <div className="text-6xl text-hanuman">
-                    {approach.number}
-                  </div>
-                  <div>
-                    <h3 className="text-2xl text-black mb-3">
-                      {approach.title}
-                    </h3>
-                    <p className="leading-relaxed">{approach.description}</p>
-                  </div>
-                </div>
-                {index < approaches.length - 1 && (
-                  <div className="ml-18 mt-8 h-16 w-px bg-linear-to-b from-stone-400 to-transparent" />
-                )}
-              </div>
+              <ApproachItem key={index} approach={approach} index={index} />
             ))}
           </div>
         </div>
