@@ -20,8 +20,8 @@ export const ApproachItem = ({ approach, index }: ApproachItemProps) => {
         transition: { duration: 0.5 }
       }}
       viewport={{ 
-        once: false, // Set to true if you want animation only once
-        amount: 0.5  // 50% of element must be visible
+        once: false,
+        amount: 0.5 
       }}
       className="border-l-4 border-orange-500 pl-6 py-4 transition-all"
     >
